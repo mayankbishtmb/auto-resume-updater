@@ -1,13 +1,16 @@
 {
+  "name": "Ayush Raj",
+  "role": "DevOps Enthusiast",
   "projects": [
-    "auto-resume-updater",
-    "GROUP-PROJECT",
-    "DEVOPS_1",
-    "WTCSB",
-    "Dev_1"
+    "Auto Resume Updater",
+    "Group Project",
+    "Devops 1",
+    "Wtcsb",
+    "Dev 1"
   ],
   "skills": [
     "HTML",
-    "JavaScript"
+    "JavaScript",
+    "Python"
   ]
 }

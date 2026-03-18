@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+</head>
+<body>
+
+    <h1>{{ name }}</h1>
+    <h3>{{ role }}</h3>
+
+    <h2>Skills</h2>
+    <ul>
+        {% for skill in skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+        {% for project in projects %}
+        <li>{{ project }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
