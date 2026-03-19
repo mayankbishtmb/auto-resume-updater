@@ -15,9 +15,12 @@ output = template.render(
     name=data["name"],
     role=data["role"],
     skills=data["skills"],
-    projects=data["projects"]
+    projects=data["projects"],
+    github=data["github"],
+    linkedin=data["linkedin"],
+    experience=data["experience"],
+    education=data["education"]
 )
-
 # Save HTML
 with open("output/resume.html", "w") as f:
     f.write(output)
