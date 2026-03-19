@@ -12,16 +12,15 @@ with open("templates/resume.html") as f:
 
 # Render HTML
 output = template.render(
-    name=data["name"],
-    role=data["role"],
-    skills=data["skills"],
-    projects=data["projects"],
-    github=data["github"],
-    linkedin=data["linkedin"],
-    experience=data["experience"],
-    education=data["education"]
-)
-# Save HTML
+    name=data.get("name", ""),
+    role=data.get("role", ""),
+    skills=data.get("skills", []),
+    projects=data.get("projects", []),
+    github=data.get("github", "#"),
+    linkedin=data.get("linkedin", "#"),
+    experience=data.get("experience", []),
+    education=data.get("education", [])
+)# Save HTML
 with open("output/resume.html", "w") as f:
     f.write(output)
 
