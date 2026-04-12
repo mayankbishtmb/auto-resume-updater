@@ -19,10 +19,11 @@ shutil.copy("output/resume.html", "index.html")
 
 # Step 4: Send Email Notification
 print("\n📧 Sending email notification...")
+import os
 
-sender_email = "araj84265@gmail.com"
-receiver_email = "araj84265@gmail.com"
-app_password = "Ayush@1548"
+sender_email = os.getenv("EMAIL_USER")
+receiver_email = sender_email
+app_password = os.getenv("EMAIL_PASS")
 
 message = MIMEText("Your resume has been updated successfully!")
 message["Subject"] = "Resume Update Notification"
