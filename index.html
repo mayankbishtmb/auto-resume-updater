@@ -2,10 +2,14 @@
 <html>
 <head>
     <title>Resume</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background: #f4f6f9;
             transition: 0.3s;
         }
@@ -22,8 +26,10 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-in;
         }
 
+        /* Sidebar */
         .sidebar {
             width: 30%;
             background: #2c3e50;
@@ -47,6 +53,7 @@
             font-size: 13px;
         }
 
+        /* Main Content */
         .main {
             width: 70%;
             padding: 30px;
@@ -55,15 +62,11 @@
 
         .header h1 {
             margin: 0;
+            color: #2c3e50;
         }
 
-        .section {
-            margin-bottom: 25px;
-        }
-
-        .section h2 {
-            color: #3498db;
-            border-bottom: 2px solid #3498db;
+        .header p {
+            color: #7f8c8d;
         }
 
         .links a {
@@ -73,17 +76,31 @@
             text-decoration: none;
         }
 
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
         button {
-            margin-top: 10px;
+            margin: 10px;
             padding: 5px 10px;
             cursor: pointer;
         }
 
         /* Animation */
-        .container {
-            animation: fadeIn 1s ease-in;
-        }
-
         @keyframes fadeIn {
             from {opacity: 0; transform: translateY(20px);}
             to {opacity: 1; transform: translateY(0);}
@@ -94,16 +111,21 @@
 
 <body>
 
+<!-- Dark Mode Button -->
 <button onclick="toggleDark()">Toggle Dark Mode 🌙</button>
 
 <div class="container">
 
-    <!-- SIDEBAR -->
+    <!-- Sidebar -->
     <div class="sidebar">
-        <img src="output/profile.jpg" alt="Profile">
+
+        <!-- ✅ Profile Image -->
+        <img src="profile.jpg" alt="Profile">
 
         <h2>Skills</h2>
         <div class="skills">
+            
+            <span>CSS</span>
             
             <span>HTML</span>
             
@@ -112,7 +134,7 @@
         </div>
     </div>
 
-    <!-- MAIN -->
+    <!-- Main Content -->
     <div class="main">
 
         <div class="header">
@@ -120,8 +142,8 @@
             <p>DevOps Enthusiast</p>
 
             <div class="links">
-                <a href="https://github.com/Ayushraj2319">GitHub</a>
-                <a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
             </div>
         </div>
 
@@ -131,9 +153,13 @@
                 
                 <li>Auto Resume Updater</li>
                 
-                <li>Group Project</li>
+                <li>React Starter</li>
                 
-                <li>Devops 1</li>
+                <li>Cicd</li>
+                
+                <li>Memori</li>
+                
+                <li>Group Project</li>
                 
             </ul>
         </div>
@@ -153,7 +179,7 @@
             <h2>Education</h2>
             <ul>
                 
-                <li>B.Tech in Computer Science</li>
+                <li>B.Tech in Computer Science - KIET Group of Institutions</li>
                 
             </ul>
         </div>

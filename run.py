@@ -1,4 +1,7 @@
 import os
+import shutil
+import smtplib
+from email.mime.text import MIMEText
 
 print("🚀 Starting Resume Automation...\n")
 
@@ -10,4 +13,30 @@ os.system("python scripts/fetch_github.py")
 print("\n📝 Generating Resume...")
 os.system("python scripts/generate_resume.py")
 
-print("\n✅ Resume updated successfully!")
+# Step 3: Update Website
+print("\n🌐 Updating website...")
+shutil.copy("output/resume.html", "index.html")
+
+# Step 4: Send Email Notification
+print("\n📧 Sending email notification...")
+
+sender_email = "araj84265@gmail.com"
+receiver_email = "araj84265@gmail.com"
+app_password = "Ayush@1548"
+
+message = MIMEText("Your resume has been updated successfully!")
+message["Subject"] = "Resume Update Notification"
+message["From"] = sender_email
+message["To"] = receiver_email
+
+try:
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.login(sender_email, app_password)
+    server.send_message(message)
+    server.quit()
+    print("Email sent successfully ✅")
+except Exception as e:
+    print("Email failed:", e)
+
+print("\n✅ Resume & website updated successfully!")
