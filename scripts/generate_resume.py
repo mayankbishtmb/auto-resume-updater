@@ -2,9 +2,13 @@ from jinja2 import Template
 import json
 from weasyprint import HTML
 
-# Load data
+# Load GitHub data
 with open("data/github_data.json") as f:
     data = json.load(f)
+
+# Load LinkedIn data
+with open("data/linkedin.json") as f:
+    linkedin_data = json.load(f)
 
 # Load template
 with open("templates/resume.html") as f:
@@ -18,13 +22,15 @@ output = template.render(
     projects=data.get("projects", []),
     github=data.get("github", "#"),
     linkedin=data.get("linkedin", "#"),
-    experience=data.get("experience", []),
-    education=data.get("education", [])
-)# Save HTML
+    experience=linkedin_data.get("experience", []),
+    education=linkedin_data.get("education", [])
+)
+
+# Save HTML
 with open("output/resume.html", "w") as f:
     f.write(output)
 
-# Convert to PDF using WeasyPrint
+# Generate PDF
 HTML(string=output).write_pdf("output/resume.pdf")
 
-print("Resume PDF generated successfully ✅")
+print("Resume with LinkedIn data generated successfully ✅")
