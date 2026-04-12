@@ -1,19 +1,16 @@
 {
   "name": "Ayush Raj",
   "role": "DevOps Enthusiast",
-  "github": "https://github.com/Ayushraj2319",
-  "linkedin": "https://linkedin.com/in/YOUR_LINKEDIN",
   "projects": [
+    "React Starter",
+    "Cicd",
+    "Memori",
     "Auto Resume Updater",
-    "Group Project",
-    "Devops 1"
+    "Group Project"
   ],
-  "skills": ["HTML", "JavaScript"],
-  "experience": [
-    "Open Source Contributor",
-    "Worked on DevOps automation project"
-  ],
-  "education": [
-    "B.Tech in Computer Science"
+  "skills": [
+    "CSS",
+    "HTML",
+    "JavaScript"
   ]
 }
