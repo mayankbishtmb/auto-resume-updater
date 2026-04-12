@@ -1,47 +1,41 @@
 import requests
 import json
-
-# 🔥 Function to clean project names
-def clean_project_name(name):
-    return name.replace("-", " ").replace("_", " ").title()
+from collections import Counter
 
 username = "Ayushraj2319"
 url = f"https://api.github.com/users/{username}/repos"
 
 response = requests.get(url)
 
-projects = []
-languages = set()
-
 if response.status_code == 200:
     repos = response.json()
 
-    # Sort repos by latest update
     repos = sorted(repos, key=lambda x: x["updated_at"], reverse=True)
 
+    projects = []
+    languages = []
+
     for repo in repos:
-        # Clean project name
-        clean_name = clean_project_name(repo["name"])
-        projects.append(clean_name)
+        projects.append(repo["name"])
 
-        # Add skills (ignore None)
         if repo["language"]:
-            languages.add(repo["language"])
+            languages.append(repo["language"])
 
-    # Final structured data
+    skill_count = Counter(languages)
+    top_skills = [skill for skill, _ in skill_count.most_common(5)]
+
     data = {
         "name": "Ayush Raj",
         "role": "DevOps Enthusiast",
+        "github": "https://github.com/Ayushraj2319",
+        "linkedin": "https://linkedin.com/in/YOUR_LINKEDIN",
         "projects": projects[:5],
-        "skills": sorted(list(languages))
+        "skills": top_skills
     }
 
-    # Save to JSON file
     with open("data/github_data.json", "w") as f:
         json.dump(data, f, indent=2)
 
     print("Clean resume data ready ✅")
-
 else:
     print("Error fetching data")
-
