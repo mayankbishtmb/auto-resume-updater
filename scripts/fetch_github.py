@@ -25,8 +25,8 @@ if user_res.status_code == 200 and repo_res.status_code == 200:
     user_data = user_res.json()
     repos = repo_res.json()
 
-    avatar = user_data.get("avatar_url", "")
-    bio = user_data.get("bio", "Passionate Developer")
+    avatar = user_data.get("avatar_url") or "https://via.placeholder.com/120"
+    bio = user_data.get("bio") or "Passionate developer with interest in DevOps and automation."
 
     repos = sorted(repos, key=lambda x: x["updated_at"], reverse=True)
 
@@ -36,7 +36,7 @@ if user_res.status_code == 200 and repo_res.status_code == 200:
     for repo in repos:
         projects.append({
             "name": repo.get("name", ""),
-            "desc": repo.get("description", "No description"),
+            "desc": repo.get("description") or "No description available",
             "url": repo.get("html_url", "#")
         })
 
@@ -44,7 +44,7 @@ if user_res.status_code == 200 and repo_res.status_code == 200:
             languages.append(repo["language"])
 
     if not languages:
-        languages = ["GitHub", "Open Source"]
+        languages = ["Python", "Git", "Automation"]
 
     skill_count = Counter(languages)
     top_skills = [skill for skill, _ in skill_count.most_common(5)]
@@ -59,11 +59,12 @@ if user_res.status_code == 200 and repo_res.status_code == 200:
         "projects": projects[:5],
         "skills": top_skills,
         "education": [
-            "B.Tech in Computer Science (Your College)"
+            "B.Tech in Computer Science - KIET Group of Institutions"
         ],
         "experience": [
-            "Built automated resume system using CI/CD",
-            "Worked with GitHub API and automation tools"
+            "Built automated resume system using CI/CD pipelines",
+            "Integrated GitHub API for dynamic data fetching",
+            "Implemented scheduled automation using GitHub Actions"
         ]
     }
 

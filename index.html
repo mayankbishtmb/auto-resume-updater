@@ -1,98 +1,201 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Resume</title>
+    <title>Premium Resume</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: Arial; margin: 40px; }
-        h1 { margin-bottom: 5px; }
-        .section { margin-top: 20px; }
-        img { width: 100px; border-radius: 50%; }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #eef2f7;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* LEFT SIDE */
+        .sidebar {
+            width: 30%;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h2 {
+            margin-top: 20px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #3498db;
+            padding: 6px 10px;
+            margin: 5px;
+            border-radius: 6px;
+            font-size: 12px;
+        }
+
+        /* RIGHT SIDE */
+        .main {
+            width: 70%;
+            padding: 30px;
+        }
+
+        .main h1 {
+            margin-bottom: 5px;
+        }
+
+        .role {
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        .section h2 {
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            color: #2980b9;
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
     </style>
 </head>
 
 <body>
 
-<img src="https://avatars.githubusercontent.com/u/184685320?v=4">
+<div class="container">
 
-<h1>Ayushraj2319</h1>
-<p>DevOps Enthusiast</p>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <img src="https://avatars.githubusercontent.com/u/184685320?v=4" alt="Profile">
 
-<p><b>GitHub:</b> <a href="https://github.com/Ayushraj2319">https://github.com/Ayushraj2319</a></p>
-<p><b>LinkedIn:</b> <a href="https://linkedin.com/in/YOUR_LINKEDIN">https://linkedin.com/in/YOUR_LINKEDIN</a></p>
+        <h2>Skills</h2>
+        <div class="skills">
+            
+            <span>HTML</span>
+            
+            <span>CSS</span>
+            
+            <span>JavaScript</span>
+            
+        </div>
+    </div>
 
-<div class="section">
-    <h2>Profile Summary</h2>
-    <p>None</p>
-</div>
+    <!-- MAIN CONTENT -->
+    <div class="main">
 
-<div class="section">
-    <h2>Skills</h2>
-    <ul>
-        
-        <li>HTML</li>
-        
-        <li>CSS</li>
-        
-        <li>JavaScript</li>
-        
-    </ul>
-</div>
+        <h1>Ayushraj2319</h1>
+        <div class="role">DevOps Enthusiast</div>
 
-<div class="section">
-    <h2>Projects</h2>
-    <ul>
-        
-        <li>
-            <b>auto-resume-updater</b><br>
-            None<br>
-            <a href="https://github.com/Ayushraj2319/auto-resume-updater">View Project</a>
-        </li>
-        
-        <li>
-            <b>react-starter</b><br>
-            None<br>
-            <a href="https://github.com/Ayushraj2319/react-starter">View Project</a>
-        </li>
-        
-        <li>
-            <b>CICD</b><br>
-            None<br>
-            <a href="https://github.com/Ayushraj2319/CICD">View Project</a>
-        </li>
-        
-        <li>
-            <b>Memori</b><br>
-            SQL Native Memory Layer for LLMs, AI Agents & Multi-Agent Systems<br>
-            <a href="https://github.com/Ayushraj2319/Memori">View Project</a>
-        </li>
-        
-        <li>
-            <b>GROUP-PROJECT</b><br>
-            None<br>
-            <a href="https://github.com/Ayushraj2319/GROUP-PROJECT">View Project</a>
-        </li>
-        
-    </ul>
-</div>
+        <div class="links">
+            <a href="https://github.com/Ayushraj2319">GitHub</a>
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a>
+        </div>
 
-<div class="section">
-    <h2>Experience</h2>
-    <ul>
-        
-        <li>Built automated resume system using CI/CD</li>
-        
-        <li>Worked with GitHub API and automation tools</li>
-        
-    </ul>
-</div>
+        <div class="section">
+            <h2>Profile Summary</h2>
+            <p>Passionate developer with interest in DevOps and automation.</p>
+        </div>
 
-<div class="section">
-    <h2>Education</h2>
-    <ul>
-        
-        <li>B.Tech in Computer Science (Your College)</li>
-        
-    </ul>
+        <div class="section">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <b>auto-resume-updater</b><br>
+                No description available<br>
+                <a href="https://github.com/Ayushraj2319/auto-resume-updater">View Project</a>
+            </div>
+            
+            <div class="project">
+                <b>react-starter</b><br>
+                No description available<br>
+                <a href="https://github.com/Ayushraj2319/react-starter">View Project</a>
+            </div>
+            
+            <div class="project">
+                <b>CICD</b><br>
+                No description available<br>
+                <a href="https://github.com/Ayushraj2319/CICD">View Project</a>
+            </div>
+            
+            <div class="project">
+                <b>Memori</b><br>
+                SQL Native Memory Layer for LLMs, AI Agents & Multi-Agent Systems<br>
+                <a href="https://github.com/Ayushraj2319/Memori">View Project</a>
+            </div>
+            
+            <div class="project">
+                <b>GROUP-PROJECT</b><br>
+                No description available<br>
+                <a href="https://github.com/Ayushraj2319/GROUP-PROJECT">View Project</a>
+            </div>
+            
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                
+                <li>Built automated resume system using CI/CD pipelines</li>
+                
+                <li>Integrated GitHub API for dynamic data fetching</li>
+                
+                <li>Implemented scheduled automation using GitHub Actions</li>
+                
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                
+                <li>B.Tech in Computer Science - KIET Group of Institutions</li>
+                
+            </ul>
+        </div>
+
+    </div>
+
 </div>
 
 </body>

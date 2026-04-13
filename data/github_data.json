@@ -4,21 +4,21 @@
   "github": "https://github.com/Ayushraj2319",
   "linkedin": "https://linkedin.com/in/YOUR_LINKEDIN",
   "avatar": "https://avatars.githubusercontent.com/u/184685320?v=4",
-  "bio": null,
+  "bio": "Passionate developer with interest in DevOps and automation.",
   "projects": [
     {
       "name": "auto-resume-updater",
-      "desc": null,
+      "desc": "No description available",
       "url": "https://github.com/Ayushraj2319/auto-resume-updater"
     },
     {
       "name": "react-starter",
-      "desc": null,
+      "desc": "No description available",
       "url": "https://github.com/Ayushraj2319/react-starter"
     },
     {
       "name": "CICD",
-      "desc": null,
+      "desc": "No description available",
       "url": "https://github.com/Ayushraj2319/CICD"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "name": "GROUP-PROJECT",
-      "desc": null,
+      "desc": "No description available",
       "url": "https://github.com/Ayushraj2319/GROUP-PROJECT"
     }
   ],
@@ -38,10 +38,11 @@
     "JavaScript"
   ],
   "education": [
-    "B.Tech in Computer Science (Your College)"
+    "B.Tech in Computer Science - KIET Group of Institutions"
   ],
   "experience": [
-    "Built automated resume system using CI/CD",
-    "Worked with GitHub API and automation tools"
+    "Built automated resume system using CI/CD pipelines",
+    "Integrated GitHub API for dynamic data fetching",
+    "Implemented scheduled automation using GitHub Actions"
   ]
 }
