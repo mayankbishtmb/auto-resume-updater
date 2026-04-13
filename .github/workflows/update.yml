@@ -2,7 +2,7 @@ name: Auto Update Resume
 
 on:
   schedule:
-    - cron: "30 4 * * *"   # 10:00 AM IST (India time)
+    - cron: "30 4 * * *"   # 10:00 AM IST
   workflow_dispatch:
 
 jobs:
@@ -13,12 +13,23 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Install system dependencies (for WeasyPrint)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libcairo2 \
+            libpango-1.0-0 \
+            libpangocairo-1.0-0 \
+            libgdk-pixbuf2.0-0 \
+            libffi-dev \
+            shared-mime-info
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
-      - name: Install Dependencies
+      - name: Install Python dependencies
         run: |
           pip install requests jinja2 weasyprint
 
