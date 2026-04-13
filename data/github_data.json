@@ -1,21 +1,47 @@
 {
-  "name": "AYUSHDUBEY24",
-  "role": "GitHub Developer",
-  "github": "https://github.com/AYUSHDUBEY24",
+  "name": "Ayushraj2319",
+  "role": "DevOps Enthusiast",
+  "github": "https://github.com/Ayushraj2319",
   "linkedin": "https://linkedin.com/in/YOUR_LINKEDIN",
-  "avatar": "https://avatars.githubusercontent.com/u/181258142?v=4",
+  "avatar": "https://avatars.githubusercontent.com/u/184685320?v=4",
   "bio": null,
   "projects": [
-    "userprofile",
-    "todoapp1",
-    "daily",
-    "website",
-    "webtech"
+    {
+      "name": "auto-resume-updater",
+      "desc": null,
+      "url": "https://github.com/Ayushraj2319/auto-resume-updater"
+    },
+    {
+      "name": "react-starter",
+      "desc": null,
+      "url": "https://github.com/Ayushraj2319/react-starter"
+    },
+    {
+      "name": "CICD",
+      "desc": null,
+      "url": "https://github.com/Ayushraj2319/CICD"
+    },
+    {
+      "name": "Memori",
+      "desc": "SQL Native Memory Layer for LLMs, AI Agents & Multi-Agent Systems",
+      "url": "https://github.com/Ayushraj2319/Memori"
+    },
+    {
+      "name": "GROUP-PROJECT",
+      "desc": null,
+      "url": "https://github.com/Ayushraj2319/GROUP-PROJECT"
+    }
   ],
   "skills": [
-    "C++",
-    "JavaScript",
+    "HTML",
     "CSS",
-    "HTML"
+    "JavaScript"
+  ],
+  "education": [
+    "B.Tech in Computer Science (Your College)"
+  ],
+  "experience": [
+    "Built automated resume system using CI/CD",
+    "Worked with GitHub API and automation tools"
   ]
 }

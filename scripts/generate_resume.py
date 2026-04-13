@@ -8,15 +8,7 @@ with open("data/github_data.json") as f:
 with open("templates/resume.html") as f:
     template = Template(f.read())
 
-output = template.render(
-    name=data.get("name", ""),
-    role=data.get("role", ""),
-    skills=data.get("skills", []),
-    projects=data.get("projects", []),
-    github=data.get("github", "#"),
-    linkedin=data.get("linkedin", "#"),
-    avatar=data.get("avatar", "")
-)
+output = template.render(**data)
 
 with open("output/resume.html", "w") as f:
     f.write(output)
