@@ -1,18 +1,21 @@
 {
-  "name": "Ayush Raj",
-  "role": "DevOps Enthusiast",
-  "github": "https://github.com/Ayushraj2319",
+  "name": "AYUSHDUBEY24",
+  "role": "GitHub Developer",
+  "github": "https://github.com/AYUSHDUBEY24",
   "linkedin": "https://linkedin.com/in/YOUR_LINKEDIN",
+  "avatar": "https://avatars.githubusercontent.com/u/181258142?v=4",
+  "bio": null,
   "projects": [
-    "auto-resume-updater",
-    "react-starter",
-    "CICD",
-    "Memori",
-    "GROUP-PROJECT"
+    "userprofile",
+    "todoapp1",
+    "daily",
+    "website",
+    "webtech"
   ],
   "skills": [
-    "HTML",
+    "C++",
+    "JavaScript",
     "CSS",
-    "JavaScript"
+    "HTML"
   ]
 }
