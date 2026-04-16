@@ -1,34 +1,35 @@
 {
   "name": "Ayushraj2319",
   "role": "DevOps Enthusiast",
-  "github": "https://github.com/Ayushraj2319",
-  "linkedin": "https://linkedin.com/in/YOUR_LINKEDIN",
+  "github_username": "Ayushraj2319",
+  "github_url": "https://github.com/Ayushraj2319",
+  "linkedin": "your-linkedin-id",
   "avatar": "https://avatars.githubusercontent.com/u/184685320?v=4",
-  "bio": "Passionate developer with interest in DevOps and automation.",
-  "projects": [
+  "summary": "Passionate developer with interest in DevOps and automation.",
+  "repos": [
     {
       "name": "auto-resume-updater",
-      "desc": "No description available",
+      "description": "No description available",
       "url": "https://github.com/Ayushraj2319/auto-resume-updater"
     },
     {
       "name": "react-starter",
-      "desc": "No description available",
+      "description": "No description available",
       "url": "https://github.com/Ayushraj2319/react-starter"
     },
     {
       "name": "CICD",
-      "desc": "No description available",
+      "description": "No description available",
       "url": "https://github.com/Ayushraj2319/CICD"
     },
     {
       "name": "Memori",
-      "desc": "SQL Native Memory Layer for LLMs, AI Agents & Multi-Agent Systems",
+      "description": "SQL Native Memory Layer for LLMs, AI Agents & Multi-Agent Systems",
       "url": "https://github.com/Ayushraj2319/Memori"
     },
     {
       "name": "GROUP-PROJECT",
-      "desc": "No description available",
+      "description": "No description available",
       "url": "https://github.com/Ayushraj2319/GROUP-PROJECT"
     }
   ],
@@ -36,13 +37,5 @@
     "HTML",
     "CSS",
     "JavaScript"
-  ],
-  "education": [
-    "B.Tech in Computer Science - KIET Group of Institutions"
-  ],
-  "experience": [
-    "Built automated resume system using CI/CD pipelines",
-    "Integrated GitHub API for dynamic data fetching",
-    "Implemented scheduled automation using GitHub Actions"
   ]
 }
