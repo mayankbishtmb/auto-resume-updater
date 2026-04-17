@@ -1,41 +1,30 @@
 {
-  "name": "Ayushraj2319",
+  "name": "Priyanshu Singh",
   "role": "DevOps Enthusiast",
-  "github_username": "Ayushraj2319",
-  "github_url": "https://github.com/Ayushraj2319",
+  "github_username": "PRIYANSHU-OSAMU",
+  "github_url": "https://github.com/PRIYANSHU-OSAMU",
   "linkedin": "your-linkedin-id",
-  "avatar": "https://avatars.githubusercontent.com/u/184685320?v=4",
+  "avatar": "https://avatars.githubusercontent.com/u/170090658?v=4",
   "summary": "Passionate developer with interest in DevOps and automation.",
   "repos": [
     {
-      "name": "GROUP-PROJECT",
-      "description": "Collaborative project demonstrating team-based development, version control, and feature integration.",
-      "url": "https://github.com/Ayushraj2319/GROUP-PROJECT"
+      "name": "Prompt-Manager",
+      "description": "Mid semester FSD project",
+      "url": "https://github.com/PRIYANSHU-OSAMU/Prompt-Manager"
     },
     {
-      "name": "CICD",
-      "description": "Implementation of CI/CD pipeline concepts including automated build, test, and deployment workflows.",
-      "url": "https://github.com/Ayushraj2319/CICD"
+      "name": "Portfolio",
+      "description": "No description available",
+      "url": "https://github.com/PRIYANSHU-OSAMU/Portfolio"
     },
     {
-      "name": "react-starter",
-      "description": "Basic React starter template with optimized project structure for scalable frontend development.",
-      "url": "https://github.com/Ayushraj2319/react-starter"
-    },
-    {
-      "name": "auto-resume-updater",
-      "description": "Automated resume generator using GitHub API, Jinja templates, and CI/CD pipeline with GitHub Actions.",
-      "url": "https://github.com/Ayushraj2319/auto-resume-updater"
-    },
-    {
-      "name": "Memori",
-      "description": "SQL Native Memory Layer for LLMs, AI Agents & Multi-Agent Systems",
-      "url": "https://github.com/Ayushraj2319/Memori"
+      "name": "Full_Stack_Development",
+      "description": "full stack development by xebia",
+      "url": "https://github.com/PRIYANSHU-OSAMU/Full_Stack_Development"
     }
   ],
   "skills": [
-    "HTML",
-    "CSS",
-    "JavaScript"
+    "JavaScript",
+    "HTML"
   ]
 }
