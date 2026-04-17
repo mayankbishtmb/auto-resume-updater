@@ -1,42 +1,41 @@
 {
-  "name": "Rishabh Kumar",
+  "name": "Ayushraj2319",
   "role": "DevOps Enthusiast",
-  "github_username": "Rishabh-kumar45",
-  "github_url": "https://github.com/Rishabh-kumar45",
+  "github_username": "Ayushraj2319",
+  "github_url": "https://github.com/Ayushraj2319",
   "linkedin": "your-linkedin-id",
-  "avatar": "https://avatars.githubusercontent.com/u/182552484?v=4",
-  "summary": "KIET CS'28",
+  "avatar": "https://avatars.githubusercontent.com/u/184685320?v=4",
+  "summary": "Passionate developer with interest in DevOps and automation.",
   "repos": [
     {
-      "name": "Dep_demo",
-      "description": "No description available",
-      "url": "https://github.com/Rishabh-kumar45/Dep_demo"
+      "name": "auto-resume-updater",
+      "description": "Automated resume generator using GitHub API, Jinja templates, and CI/CD pipeline with GitHub Actions.",
+      "url": "https://github.com/Ayushraj2319/auto-resume-updater"
     },
     {
-      "name": "PE",
-      "description": "No description available",
-      "url": "https://github.com/Rishabh-kumar45/PE"
+      "name": "GROUP-PROJECT",
+      "description": "Collaborative project demonstrating team-based development, version control, and feature integration.",
+      "url": "https://github.com/Ayushraj2319/GROUP-PROJECT"
     },
     {
-      "name": "PE-Task-1",
-      "description": "No description available",
-      "url": "https://github.com/Rishabh-kumar45/PE-Task-1"
+      "name": "CICD",
+      "description": "Implementation of CI/CD pipeline concepts including automated build, test, and deployment workflows.",
+      "url": "https://github.com/Ayushraj2319/CICD"
     },
     {
-      "name": "Portfolio",
-      "description": "No description available",
-      "url": "https://github.com/Rishabh-kumar45/Portfolio"
+      "name": "react-starter",
+      "description": "Basic React starter template with optimized project structure for scalable frontend development.",
+      "url": "https://github.com/Ayushraj2319/react-starter"
     },
     {
-      "name": "OOPs-Java",
-      "description": "No description available",
-      "url": "https://github.com/Rishabh-kumar45/OOPs-Java"
+      "name": "Memori",
+      "description": "SQL Native Memory Layer for LLMs, AI Agents & Multi-Agent Systems",
+      "url": "https://github.com/Ayushraj2319/Memori"
     }
   ],
   "skills": [
-    "CSS",
     "HTML",
-    "JavaScript",
-    "Java"
+    "CSS",
+    "JavaScript"
   ]
 }
