@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  resume-app:
+    build: .
+    container_name: resume_updater
+    volumes:
+      - .:/app
+    environment:
+      - GITHUB_USERNAME=Ayushraj2319
+      - EMAIL_USER=${EMAIL_USER}
+      - EMAIL_PASS=${EMAIL_PASS}
+    command: python run.py
